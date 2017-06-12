@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColorLight"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTextLight"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/framelayout"
+            android:layout_height="50dp"
+            android:layout_width="50dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:background="@drawable/circle"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/imgRateFood" />
+            <TextView android:id="@+id/txtRateFood"
+                android:layout_width="50dp"
+                android:text="6"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/colorTextLight"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+        <TextView
+            android:id="@+id/txtFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rau Muốn xào tỏi"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/txtFoodFee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="69.000 đồng"
+            android:textColor="@color/colorTextGray"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

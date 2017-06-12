@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:background="@drawable/bia" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtNameRes"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorTextLight"
+            android:layout_height="wrap_content"
+            android:text="Bia Sệt 69" />
+        <RatingBar
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:rating="3.5"
+            android:isIndicator="true"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/txtAdresRes"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/colorTextLight"
+            android:layout_width="match_parent"
+            android:paddingBottom="20dp"
+            android:layout_height="wrap_content"
+            android:text="số 4 Quang Trung, P. Hiệp Phú, Quận 9, TP. HCM" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Còn Chổ "
+                android:id="@+id/rdStateFree"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/edtNoSpace"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:hint="Số lượng chổ trống"
+                    android:visibility="gone"
+                    android:numeric="integer"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hết chổ "
+                android:id="@+id/rdStateClose"/>
+        </RadioGroup>
+        <Button
+            android:layout_width="200dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorTextLight"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stylebutton"
+            android:text="Cập Nhật"
+            />
+    </LinearLayout>
+</LinearLayout>

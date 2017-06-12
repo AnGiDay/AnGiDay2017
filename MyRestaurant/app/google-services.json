@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "908770963047",
+    "firebase_url": "https://angiday-48069.firebaseio.com",
+    "project_id": "angiday-48069",
+    "storage_bucket": "angiday-48069.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908770963047:android:76d3a13b8951e431",
+        "android_client_info": {
+          "package_name": "com.example.khach.myrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908770963047-o5verms73luaegfda936r62f5bcuht0t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.khach.myrestaurant",
+            "certificate_hash": "09e9febe1b9247d3fee080b8469ce61e04172e70"
+          }
+        },
+        {
+          "client_id": "908770963047-dpsifp47vgksoep06ai0acb6iaudg932.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtkhCx2E9MroYN2_gQcT7Bocp9sgLyAdY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908770963047-dpsifp47vgksoep06ai0acb6iaudg932.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
