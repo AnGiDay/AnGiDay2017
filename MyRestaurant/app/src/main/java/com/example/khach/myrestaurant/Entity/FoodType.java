@@ -8,6 +8,9 @@ public class FoodType {
     private String FoodTypeID;
     private String FoodTypeName;
 
+    public FoodType() {
+    }
+
     public FoodType(String foodTypeID, String foodTypeName) {
         FoodTypeID = foodTypeID;
         FoodTypeName = foodTypeName;

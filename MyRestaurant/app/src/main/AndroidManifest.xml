@@ -23,7 +23,12 @@
         <activity android:name=".View.Login"
             android:label="Đăng nhập">
         </activity>
-
+        <activity android:name=".View.Signup"
+            android:label="Đăng ký">
+        </activity>
+        <activity android:name=".View.Signup_Restautant"
+            android:label="Đăng ký quán ăn">
+        </activity>
         <activity
         android:name=".View.MainDetailRestaurant"
         android:label="@string/title_activity_main_detail_restaurant"

@@ -11,10 +11,14 @@ public class Restaurant {
     private float Longitude;
     private int TotalSpace;
     private int FreeSpace;
+
     private String image; //to save link image;
     private float AverageRating;
     private int NumberOfRating;
     private String Description;
+
+    public Restaurant() {
+    }
 
     public Restaurant(String resID, String resName, float latitude, float longitude, int totalSpace, int freeSpace, String image, float averageRating, int numberOfRating, String description) {
         ResID = resID;
@@ -41,10 +45,10 @@ public class Restaurant {
         return ResName;
     }
 
+
     public void setResName(String resName) {
         ResName = resName;
     }
-
     public float getLatitude() {
         return Latitude;
     }

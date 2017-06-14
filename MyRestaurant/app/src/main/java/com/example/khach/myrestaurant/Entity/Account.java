@@ -10,6 +10,9 @@ public class Account {
     private String Password;
     private String PhoneNo;
 
+    public Account() {
+    }
+
     public Account(String userID, String typeAccountID, String password, String phoneNo) {
         UserID = userID;
         TypeAccountID = typeAccountID;

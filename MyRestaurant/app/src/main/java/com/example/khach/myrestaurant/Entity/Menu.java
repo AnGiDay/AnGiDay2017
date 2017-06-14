@@ -12,6 +12,9 @@ public class Menu {
     private String Image;
     private float Rating;
 
+    public Menu() {
+    }
+
     public Menu(String resID, String foodTypeID, String foodName, String price, String image, float rating) {
         ResID = resID;
         FoodTypeID = foodTypeID;

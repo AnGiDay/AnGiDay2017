@@ -12,6 +12,9 @@ public class RatingDetail {
     ///Like = 1 to save Like list of user
     private int Like;
 
+    public RatingDetail() {
+    }
+
     public RatingDetail(String userID, String resID, String comment, float rating, int like) {
         UserID = userID;
         ResID = resID;
