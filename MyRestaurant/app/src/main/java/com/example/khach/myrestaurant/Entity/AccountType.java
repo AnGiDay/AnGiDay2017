@@ -28,4 +28,7 @@ public class AccountType {
     public void setUserName(String userName) {
         UserName = userName;
     }
+
+    public AccountType() {
+    }
 }

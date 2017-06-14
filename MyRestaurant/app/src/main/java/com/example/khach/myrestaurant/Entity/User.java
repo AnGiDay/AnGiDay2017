@@ -13,7 +13,11 @@ public class User {
         UserName = userName;
     }
 
+    public User() {
+    }
+
     public String getUserID() {
+
         return UserID;
     }
 
