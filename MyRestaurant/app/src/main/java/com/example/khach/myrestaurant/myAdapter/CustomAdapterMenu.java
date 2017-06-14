@@ -10,7 +10,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.khach.myrestaurant.Entity.Food;
+import com.example.khach.myrestaurant.Entity.Menu;
 import com.example.khach.myrestaurant.R;
 
 import java.util.ArrayList;
@@ -20,9 +20,9 @@ import java.util.ArrayList;
  */
 
 public class CustomAdapterMenu
-        extends ArrayAdapter<Food> {
+        extends ArrayAdapter<Menu> {
 
-    private ArrayList<Food> dataSet;
+    private ArrayList<Menu> dataSet;
     Context mContext;
 
     private static class ViewHolder {
@@ -31,7 +31,7 @@ public class CustomAdapterMenu
         TextView txtRate;
     }
 
-    public CustomAdapterMenu(ArrayList<Food> data, Context context) {
+    public CustomAdapterMenu(ArrayList<Menu> data, Context context) {
         super(context, R.layout.menu_res_row, data);
         this.dataSet = data;
         this.mContext = context;
@@ -64,10 +64,10 @@ public class CustomAdapterMenu
         Animation animation = AnimationUtils.loadAnimation(mContext, (position > lastPosition) ? R.anim.up_from_bottom : R.anim.down_from_top);
         result.startAnimation(animation);
         lastPosition = position;
-        Food dataModel = getItem(position);
-        viewHolder.txtName.setText(dataModel.getName());
-        viewHolder.txtFee.setText(dataModel.getFee());
-        viewHolder.txtRate.setText(String.valueOf(dataModel.getRate()));
+        Menu dataModel = getItem(position);
+        viewHolder.txtName.setText(dataModel.getFoodName());
+        viewHolder.txtFee.setText(dataModel.getPrice());
+        viewHolder.txtRate.setText(String.valueOf(dataModel.getRating()));
         return result;
     }
 }

@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.khach.myrestaurant">
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,32 +23,22 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".View.Login"
-            android:label="Đăng nhập">
-        </activity>
-        <activity android:name=".View.Signup"
-            android:label="Đăng ký">
-        </activity>
-        <activity android:name=".View.Signup_Restautant"
-            android:label="Đăng ký quán ăn">
-        </activity>
         <activity
-        android:name=".View.MainDetailRestaurant"
-        android:label="@string/title_activity_main_detail_restaurant"
-        android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".View.MainDetailRestaurant"
+            android:label="@string/title_activity_main_detail_restaurant"
+            android:parentActivityName=".View.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity
             android:name=".View.Update_FreeSpace"
-            android:label="Cập nhật số chổ trống">
-        </activity>
+            android:label="Cập nhật số chổ trống"
+            android:parentActivityName=".View.MainActivity"></activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBrvW-gouWiH8t6vM4THtxpcNh-xOypfdA"/>
+            android:value="AIzaSyBrvW-gouWiH8t6vM4THtxpcNh-xOypfdA" />
     </application>
-
 </manifest>

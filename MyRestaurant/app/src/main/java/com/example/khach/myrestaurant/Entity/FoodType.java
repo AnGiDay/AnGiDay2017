@@ -6,10 +6,11 @@ package com.example.khach.myrestaurant.Entity;
 
 public class FoodType {
     private String FoodTypeID;
-    private String FoodTypeName;
 
     public FoodType() {
     }
+
+    private String FoodTypeName;
 
     public FoodType(String foodTypeID, String foodTypeName) {
         FoodTypeID = foodTypeID;

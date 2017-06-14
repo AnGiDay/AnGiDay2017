@@ -22,7 +22,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/txtNameRes"
+            android:id="@+id/txtUpdateSpace_NameRes"
             android:paddingTop="20dp"
             android:layout_marginLeft="30dp"
             android:textSize="20dp"
@@ -38,9 +38,10 @@
             android:stepSize="0.1"
             android:rating="3.5"
             android:isIndicator="true"
+            android:id="@+id/rd_UpdateSpace_Rating"
             android:layout_height="20dp" />
         <TextView
-            android:id="@+id/txtAdresRes"
+            android:id="@+id/txtUpdateSpace_AdresRes"
             android:layout_marginLeft="30dp"
             android:textColor="@color/colorTextLight"
             android:layout_width="match_parent"
@@ -86,6 +87,7 @@
                 android:id="@+id/rdStateClose"/>
         </RadioGroup>
         <Button
+            android:id="@+id/btnUpdateSpace"
             android:layout_width="200dp"
             android:layout_marginTop="20dp"
             android:textColor="@color/colorTextLight"

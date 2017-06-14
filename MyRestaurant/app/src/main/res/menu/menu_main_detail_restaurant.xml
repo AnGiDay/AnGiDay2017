@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.khach.myrestaurant.View.MainDetailRestaurant">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_close"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:icon="@drawable/ic_close_dark"
+        android:title="@string/close"
+        app:showAsAction="ifRoom" />
 </menu>

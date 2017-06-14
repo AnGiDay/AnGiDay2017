@@ -5,20 +5,16 @@ package com.example.khach.myrestaurant.Entity;
  */
 
 public class Restaurant {
-    private  String ResID;
-    private  String ResName;
+    private String ResID;
+    private String ResName;
     private float Latitude;
     private float Longitude;
     private int TotalSpace;
     private int FreeSpace;
-
     private String image; //to save link image;
     private float AverageRating;
     private int NumberOfRating;
     private String Description;
-
-    public Restaurant() {
-    }
 
     public Restaurant(String resID, String resName, float latitude, float longitude, int totalSpace, int freeSpace, String image, float averageRating, int numberOfRating, String description) {
         ResID = resID;
@@ -33,28 +29,31 @@ public class Restaurant {
         Description = description;
     }
 
+    public Restaurant() {
+    }
+
     public String getResID() {
         return ResID;
     }
 
     public void setResID(String resID) {
-        ResID = resID;
+        this.ResID = resID;
     }
 
     public String getResName() {
         return ResName;
     }
 
-
     public void setResName(String resName) {
-        ResName = resName;
+        this.ResName = resName;
     }
+
     public float getLatitude() {
         return Latitude;
     }
 
     public void setLatitude(float latitude) {
-        Latitude = latitude;
+        this.Latitude = latitude;
     }
 
     public float getLongitude() {
@@ -62,7 +61,7 @@ public class Restaurant {
     }
 
     public void setLongitude(float longitude) {
-        Longitude = longitude;
+        this.Longitude = longitude;
     }
 
     public int getTotalSpace() {
@@ -70,7 +69,7 @@ public class Restaurant {
     }
 
     public void setTotalSpace(int totalSpace) {
-        TotalSpace = totalSpace;
+        this.TotalSpace = totalSpace;
     }
 
     public int getFreeSpace() {
@@ -78,7 +77,7 @@ public class Restaurant {
     }
 
     public void setFreeSpace(int freeSpace) {
-        FreeSpace = freeSpace;
+        this.FreeSpace = freeSpace;
     }
 
     public String getImage() {
@@ -94,7 +93,7 @@ public class Restaurant {
     }
 
     public void setAverageRating(float averageRating) {
-        AverageRating = averageRating;
+        this.AverageRating = averageRating;
     }
 
     public int getNumberOfRating() {
@@ -102,7 +101,7 @@ public class Restaurant {
     }
 
     public void setNumberOfRating(int numberOfRating) {
-        NumberOfRating = numberOfRating;
+        this.NumberOfRating = numberOfRating;
     }
 
     public String getDescription() {
@@ -110,6 +109,6 @@ public class Restaurant {
     }
 
     public void setDescription(String description) {
-        Description = description;
+        this.Description = description;
     }
 }
