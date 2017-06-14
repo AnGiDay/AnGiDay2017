@@ -23,7 +23,6 @@ public class Menu {
         Image = image;
         Rating = rating;
     }
-
     public String getResID() {
         return ResID;
     }
