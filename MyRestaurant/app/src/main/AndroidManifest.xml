@@ -19,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".View.Login"
+            android:label="Đăng nhập">
+        </activity>
+
         <activity
         android:name=".View.MainDetailRestaurant"
         android:label="@string/title_activity_main_detail_restaurant"
@@ -26,7 +31,8 @@
         <activity
             android:name=".View.Update_FreeSpace"
             android:label="Cập nhật số chổ trống">
-    </activity>
+        </activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBrvW-gouWiH8t6vM4THtxpcNh-xOypfdA"/>
