@@ -28,7 +28,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:hint="Tên đăng nhập" />
+                android:hint="Tên đăng nhập"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm"/>
         </android.support.design.widget.TextInputLayout>
 
         <!-- Address Label -->
@@ -54,7 +55,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
-                android:hint="Số điện thoại" />
+                android:hint="Số điện thoại"
+                android:digits="0123456789"/>
         </android.support.design.widget.TextInputLayout>
 
         <!-- Password Label -->
