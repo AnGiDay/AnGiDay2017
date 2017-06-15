@@ -28,7 +28,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:hint="Tên đăng nhập" />
+                android:hint="Tên đăng nhập"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm"/>
         </android.support.design.widget.TextInputLayout>
 
         <!-- Address Label -->
@@ -54,7 +55,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:hint="Số điện thoại" />
+                android:hint="Số điện thoại"
+                android:digits="0123456789"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText android:id="@+id/edit_Des_res"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Địa chỉ"
+                    />
+                <Button
+                    android:id="@+id/btn_location_signup"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="location"
+                    />
+            </LinearLayout>
         </android.support.design.widget.TextInputLayout>
 
         <!--  Total Space Label -->
